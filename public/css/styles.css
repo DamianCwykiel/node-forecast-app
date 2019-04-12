@@ -1,4 +1,6 @@
 body {
+    background: url('/img/bcg-2.png') no-repeat center center;
+    background-size: cover;
     color: #000;
     display: flex;
     font-family: arial;
@@ -17,13 +19,17 @@ body {
 .main-content {
     flex-grow: 1;
 }
+.main-content-about {
+    display: flex;
+    flex-direction: column;
+}
 
 .about-img {
-    width: 265px;
+    width: 200px;
 }
 
 header {
-    margin-top:1rem;
+    margin-top: 1rem;
     margin-bottom: 48px; 
     width: 100%
 }
@@ -33,10 +39,40 @@ h1 {
 }
 
 header a {
-    color: #555;
+    color: #fff;
     margin-right: 1rem;
     text-decoration: none;
 }
+
+article {
+    color: #fff;
+}
+
+#firstMessageForecast, #secondMessageLocation {
+    color: #fff;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 16px;
+    color: #555;
+}
+
+p {
+    color: #555;
+    font-size: 14px;
+}
+
+ul > li {
+    color: #555;
+    line-height: 200%;
+}
+
+#footer-subtitle {
+    font-size: 12px;
+    font-style: italic;
+}
+
 
 #form-container {
     color: royalblue;
@@ -45,7 +81,7 @@ header a {
     font-weight: 500;
     margin: 3rem auto;
     line-height: 180%;
-    width: 40rem;
+    width: 20rem;
 }
 
 
