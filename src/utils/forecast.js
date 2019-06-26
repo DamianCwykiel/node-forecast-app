@@ -10,7 +10,7 @@ const forecast = (latitude, longitude, callback) => {
         } else if (body.error) {
             callback('400 Error...Unable to find the location. Try again.', undefined)
         } else {
-             callback(undefined, body.daily.data[0].summary + ' Obecnie temperatura wynosi ' + Math.round(body.currently.temperature) + '°C  jest ' +  Math.round(body.currently.precipProbability  * 100) + '% szans na opady. Wilgotność wynosi ' + Math.round(body.daily.data[0].humidity  * 100 ) + '% a prędkość wiatru osiąga ' + body.daily.data[0].windSpeed +' km/h.')
+             callback(undefined, body.daily.data[0].summary + ' Obecnie temperatura wynosi ' + Math.round(body.currently.temperature) + '°C  jest ' +  Math.round(body.currently.precipProbability  * 100) + '% szans na opady. Wilgotność wynosi ' + Math.round(body.daily.data[0].humidity  * 100 ) + '% a prędkość wiatru osiąga ' + Math.round(body.daily.data[0].windSpeed) +' km/h.')
         }
     })
 }
