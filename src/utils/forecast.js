@@ -13,7 +13,7 @@ const forecast = (latitude, longitude, callback) => {
             //console.log(body.daily.data[0])
             //  console.log(`${response.body.daily.data[0]} It's currently ${response.body.currently.temperature} degress. There's a ${response.body.currently.precipProbability} % of rain.`)
             //callback(undefined, body.daily.data[0].summary + ' It currently is ' + body.currently.temperature + ' degrees and there is a ' + body.currently.precipProbability + '% chance of rain. Humidity equals ' + body.daily.data[0].humidity + '% and the wind speed reaches ' + body.daily.data[0].windSpeed +' km/h.')
-            callback(undefined, body.daily.data[0].summary + ' Obecnie temperatura wynosi ' + body.currently.temperature + '°C  jest ' + body.currently.precipProbability + '% szans na opady. Wilgotność wynosi ' + body.daily.data[0].humidity + '% a prędkość wiatru osiąga ' + body.daily.data[0].windSpeed +' km/h.')
+             callback(undefined, body.daily.data[0].summary + ' Obecnie temperatura wynosi ' + Math.round(body.currently.temperature) + '°C  jest ' +  Math.round(body.currently.precipProbability  * 100) + '% szans na opady. Wilgotność wynosi ' + Math.round(body.daily.data[0].humidity  * 100 ) + '% a prędkość wiatru osiąga ' + Math.round(body.daily.data[0].windSpeed) +' km/h.')
         }
     })
 }

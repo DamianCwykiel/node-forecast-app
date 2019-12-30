@@ -32,7 +32,6 @@ app.use((req, res, next) => {
     const log = `${now}: ${req.method} ${req.url}`;
   
     // console.log(log);
-    // fs.appendFile('server.log', log + '\n');
     fs.appendFile('server.log', log + '\n', (err) => {
       if(err) {
         console.log('unable to append to server.log')
@@ -68,21 +67,6 @@ app.get('/help', (req, res) => {
         name: 'Damian Cwykiel ©'
     })
 })
-
-//weather endpoint
-// app.get ('/weather',(req, res) => {
-//     if (!req.query.address || !req.query.country) {
-//         return res.send ({
-//             error: 'Both an address and country terms must be provided'
-//         })
-//     }
-// console.log(req.query.country)
-//     res.send([{
-//         location: req.query.country,
-//         forecast: 'Sunny day, no rain',
-//         address: req.query.address
-//     }])
-// })
 
 app.get('/weather', (req, res) => {
     if(!req.query.address) {
@@ -120,6 +104,7 @@ app.get('/products', (req, res) => {
         products: []
     })
 })
+
 //help
 app.get('/help/*', (req, res) => {
     res.render('404-page', {
@@ -141,4 +126,4 @@ app.get('*', (req, res) => {
 //server
 app.listen(`${port}`, () => {
     console.log(`Server is alive on port ${port}!`);
-  }); 
+}); 

@@ -44,6 +44,10 @@ header a {
     text-decoration: none;
 }
 
+header a:hover {
+    color: #888;
+}
+
 article {
     color: #fff;
 }
@@ -74,7 +78,6 @@ ul > li {
     font-style: italic;   
 }
 
-
 #form-container {
     color: royalblue;
     height: 10rem;
@@ -84,7 +87,6 @@ ul > li {
     line-height: 180%;
     width: 25rem;
 }
-
 
 input {
     border: 1px solid #ccc;
@@ -98,6 +100,10 @@ button {
     background: #555;
     color: white;
     padding: 8px;
+}
+
+button:hover {
+    background-color: #000;
 }
 
 footer {
