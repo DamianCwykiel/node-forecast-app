@@ -64,7 +64,7 @@ app.get('/about', (req, res) => {
 app.get('/help', (req, res) => {
     res.render('help', {
         title: 'Help Page',
-        helpfulText: 'A few helpful tips.',
+        helpfulText: 'A few helpful tips',
         name: 'Damian Cwykiel ©'
     })
 })
@@ -137,26 +137,6 @@ app.get('*', (req, res) => {
         errorMessage: 'Page not found. Sorry O_O'
     })
 })
-
-// //home
-// app.get('', (req, res) => {
-//     res.send('<h1>hello express!</h1>')
-// })
-//about
-// app.get ('/about',(req, res) => {
-//     res.send('<h1>about page!</h1>')
-// })
-// //help
-// app.get ('/help',(req, res) => {
-//     res.send([{
-//         name: 'Damian',
-//         age: 30
-//     }, {
-//         name: 'Ignac'
-//     }])
-// })
-
-
 
 //server
 app.listen(`${port}`, () => {
