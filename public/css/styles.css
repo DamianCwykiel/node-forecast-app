@@ -50,6 +50,7 @@ article {
 
 #firstMessageForecast, #secondMessageLocation {
     color: #fff;
+    font-size: 16px;
     font-weight: 600;
 }
 
@@ -70,7 +71,7 @@ ul > li {
 
 #footer-subtitle {
     font-size: 12px;
-    font-style: italic;
+    font-style: italic;   
 }
 
 
@@ -81,7 +82,7 @@ ul > li {
     font-weight: 500;
     margin: 3rem auto;
     line-height: 180%;
-    width: 20rem;
+    width: 25rem;
 }
 
 
