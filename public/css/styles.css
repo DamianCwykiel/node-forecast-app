@@ -61,11 +61,12 @@ h3 {
 
 p {
     color: #555;
-    font-size: 14px;
+    font-size: 14px;    
+    font-weight: 400;
 }
 
 ul > li {
-    color: #555;
+    color: #000;
     line-height: 200%;
 }
 
@@ -93,10 +94,12 @@ input {
 }
 
 button {
-    cursor: pointer;
     border: 1px solid #555;
     background: #555;
     color: white;
+    cursor: pointer;
+    font-weight: 600;
+    letter-spacing: .1rem;
     padding: 8px;
 }
 
